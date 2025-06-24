@@ -1,0 +1,230 @@
+:root {
+  /* COLORS */
+  /* rose */
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+
+  /* stone */
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+
+  /* brown */
+  --brown-800: #854632;
+
+  /* white */
+  --white: #ffffff;
+
+  /* SPACING */
+  --spacing-1600: 128px;
+  --spacing-600: 48px;
+  --spacing-500: 40px;
+  --spacing-400: 32px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Young Serif";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
+    format("woff2");
+}
+.font {
+  line-height: 100%;
+  letter-spacing: 0;
+}
+.outfit {
+  font-family: "Outfit";
+}
+.young-serif {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+.text-preset-1 {
+  /* Young Serif */
+  font-size: 40px;
+}
+.text-preset-2 {
+  /* Young Serif */
+  font-size: 28px;
+}
+.text-preset-3 {
+  /* Outfit */
+  font-weight: 600;
+  font-size: 20px;
+}
+.text-preset-4 {
+  /* Outfit */
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+.text-preset-4-bold {
+  /* Outfit */
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  background-color: var(--stone-100);
+  padding-block: var(--spacing-1600);
+  padding-inline: var(--spacing-600);
+}
+main {
+  max-width: 736px;
+  background-color: var(--white);
+  border-radius: 24px;
+  margin-inline: auto;
+  padding-block: var(--spacing-500);
+  padding-inline: var(--spacing-500);
+  row-gap: var(--spacing-500);
+}
+div img {
+  border-radius: var(--spacing-150);
+}
+main div:nth-child(2) {
+  row-gap: var(--spacing-400);
+}
+section,
+hgroup {
+  row-gap: var(--spacing-300);
+}
+h1 {
+  color: var(--stone-900);
+}
+hgroup p {
+  color: var(--stone-600);
+}
+section:first-of-type {
+  background-color: var(--rose-50);
+  border-radius: 12px;
+  padding-inline: var(--spacing-300);
+  padding-block: var(--spacing-300);
+  row-gap: var(--spacing-200);
+}
+section:first-of-type h2 {
+  color: var(--rose-800);
+}
+section:first-of-type li::before {
+  background-color: var(--rose-800);
+}
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  row-gap: var(--spacing-100);
+}
+.li {
+  padding-inline-start: 40px;
+  color: var(--stone-600);
+  position: relative;
+}
+.li::before {
+  content: "";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: var(--brown-800);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(8px);
+}
+section h2 {
+  color: var(--brown-800);
+}
+hr {
+  max-width: 100%;
+  width: 100%;
+  height: 1px;
+  background: var(--stone-150);
+}
+section ol {
+  row-gap: var(--spacing-100);
+  padding-inline-start: var(--spacing-300);
+  color: var(--stone-600);
+}
+section ol li {
+  padding-inline-start: var(--spacing-200);
+}
+section ol li::marker {
+  color: var(--brown-800);
+  font-family: Outfit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+section p {
+  color: var(--stone-600);
+}
+section table {
+  width: 100%;
+  padding-inline: var(--spacing-400);
+  border-collapse: collapse;
+  display: flex;
+  justify-content: center;
+}
+section table tr{
+  width: 100%;
+  display: flex;
+  column-gap: var(--spacing-200);
+}
+section th,
+section td {
+  padding: 0;
+  min-width: 288px;
+  width: 100%;
+}
+section table tr th,
+section table tr td {
+  border-block-end: 1px solid var(--stone-150);
+}
+tr:not(:last-of-type) th, tr:not(:last-child) td {
+  padding-block-end: var(--spacing-150);
+}
+tr:not(:first-child) th, tr:not(:first-child) td {
+  padding-block-start: var(--spacing-150);
+}
+section table tr th{
+  color: var(--stone-600);
+  text-align: start;
+}
+section table tr td{
+  color: var(--brown-800);
+  text-align: start;
+}
