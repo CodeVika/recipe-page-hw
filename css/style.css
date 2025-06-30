@@ -35,28 +35,12 @@
   src: url("../assets/fonts/young-serif/YoungSerif-Regular.ttf") format("woff2");
 }
 @font-face {
-  font-display: swap;
   font-family: "Outfit";
-  font-style: normal;
-  font-weight: 400;
   src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
     format("woff2");
-}
-@font-face {
-  font-display: swap;
-  font-family: "Outfit";
+  font-weight: 100 900;
   font-style: normal;
-  font-weight: 600;
-  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
-    format("woff2");
-}
-@font-face {
   font-display: swap;
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../assets/fonts/outfit/Outfit-VariableFont_wght.ttf")
-    format("woff2");
 }
 .font {
   line-height: 100%;
