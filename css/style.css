@@ -196,19 +196,15 @@ section table {
   width: 100%;
   padding-inline: var(--spacing-400);
   border-collapse: collapse;
-  display: flex;
-  justify-content: center;
 }
 section table tr{
   width: 100%;
-  display: flex;
-  column-gap: var(--spacing-200);
 }
 section th,
 section td {
   padding: 0;
   min-width: 288px;
-  width: 100%;
+  width: 50%;
 }
 section table tr th,
 section table tr td {
@@ -221,10 +217,14 @@ tr:not(:first-child) th, tr:not(:first-child) td {
   padding-block-start: var(--spacing-150);
 }
 section table tr th{
+  padding-inline-start: var(--spacing-400);
+  padding-inline-end: var(--spacing-100);
   color: var(--stone-600);
   text-align: start;
 }
 section table tr td{
+  padding-inline-start: var(--spacing-100);
+  padding-inline-end: var(--spacing-400);
   color: var(--brown-800);
   text-align: start;
 }
